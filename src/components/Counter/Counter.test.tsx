@@ -46,7 +46,7 @@ describe('Counter', () => {
 
     expect(ammountInput).toHaveValue(10);
 
-    const setButton = screen.getByRole('button', { name: 'Set' });
+    const setButton = screen.getByRole('button', { name: 'Set Value' });
     await user.click(setButton);
 
     const countElement = screen.getByRole('heading', { level: 2 });
@@ -57,7 +57,7 @@ describe('Counter', () => {
     const user = userEvents.setup();
 
     const ammountInput = screen.getByRole('spinbutton');
-    const setButton = screen.getByRole('button', { name: 'Set' });
+    const setButton = screen.getByRole('button', { name: 'Set Value' });
     const incrementButton = screen.getByRole('button', { name: 'Increment' });
 
     await user.tab();
