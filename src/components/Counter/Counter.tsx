@@ -10,6 +10,8 @@ export function Counter() {
       <button type="button" onClick={() => setCount(count + 1)}>
         Increment
       </button>
+      <br />
+      <br />
       <input
         type="number"
         name="ammount"
@@ -17,7 +19,7 @@ export function Counter() {
         onChange={(e) => setAmmount(parseInt(e.target.value, 10))}
       />
       <button type="button" onClick={() => setCount(ammount)}>
-        Set
+        Set Value
       </button>
     </div>
   );
